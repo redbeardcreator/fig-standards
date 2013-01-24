@@ -27,8 +27,17 @@ TFI Notes
 
 - Most files currently violate one or more of the following
   rules. Where possible, when a file is being edited, it SHOULD first
-  be converted to meet at least 2.1, 2.2, 2.3 and 2.4 and committed
-  before continuing. This makes change tracking easier.
+  be converted to meet at least 2.1, 2.2, 2.3 and 2.4
+  - Immediately after such a change, the modified files SHOULD be
+    committed before continuing. This makes change tracking
+    easier.
+
+  - The commit summary (first line) should be prefixed with [clean]
+    and include a basic description of changes (if a complete cleanup,
+    something like "bring up to PSR-2" would be appropriate).
+
+  - If more than one file is updated, omit the filename from the
+    summary.
 
 - As time permits (or changes demand) the remaining rules should also
   be applied.
