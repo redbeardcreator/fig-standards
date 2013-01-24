@@ -22,6 +22,17 @@ interpreted as described in [RFC 2119][].
 [PSR-1]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
 
 
+TFI Notes
+---------
+
+- Most files currently violate one or more of the following
+  rules. Where possible, when a file is being edited, it SHOULD first
+  be converted to meet at least 2.1, 2.2, 2.3 and 2.4 and committed
+  before continuing. This makes change tracking easier.
+
+- As time permits (or changes demand) the remaining rules should also
+  be applied.
+
 1. Overview
 -----------
 
@@ -44,7 +55,7 @@ interpreted as described in [RFC 2119][].
 - Visibility MUST be declared on all properties and methods; `abstract` and
   `final` MUST be declared before the visibility; `static` MUST be declared
   after the visibility.
-  
+
 - Control structure keywords MUST have one space after them; method and
   function calls MUST NOT.
 
@@ -124,7 +135,7 @@ Code MUST use an indent of 4 spaces, and MUST NOT use tabs for indenting.
 
 > N.b.: Using only spaces, and not mixing spaces with tabs, helps to avoid
 > problems with diffs, patches, history, and annotations. The use of spaces
-> also makes it easy to insert fine-grained sub-indentation for inter-line 
+> also makes it easy to insert fine-grained sub-indentation for inter-line
 > alignment.
 
 ### 2.5. Keywords and True/False/Null
@@ -261,7 +272,7 @@ class ClassName
         // method body
     }
 }
-```    
+```
 
 ### 4.4. Method Arguments
 
@@ -464,7 +475,7 @@ for ($i = 0; $i < 10; $i++) {
 ```
 
 ### 5.5. `foreach`
-    
+
 A `foreach` statement looks like the following. Note the placement of
 parentheses, spaces, and braces.
 

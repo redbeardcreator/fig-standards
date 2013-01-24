@@ -1,6 +1,18 @@
 The following describes the mandatory requirements that must be adhered
 to for autoloader interoperability.
 
+TFI Notes
+---------
+
+- TFI currently operates under PHP 5.2, so at this time namespaces do not
+  apply. However, class naming and directories should apply.
+
+- Going forward, we will likely use `\TFI\[project]` as the base
+  namespace.
+
+- New class defintions should be added in the appropriate
+  class files under `lib/TFI/[project]/`.
+
 Mandatory
 ---------
 

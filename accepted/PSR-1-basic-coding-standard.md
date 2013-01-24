@@ -12,6 +12,19 @@ interpreted as described in [RFC 2119][].
 [RFC 2119]: http://www.ietf.org/rfc/rfc2119.txt
 [PSR-0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
 
+TFI Notes
+---------
+
+- TFI currently uses Latin-1 encoded files. These can typically interpreted
+  as UTF-8 fairly safely. If such a file is found that violates this assumption,
+  it should be fixed immediately. (See 2.2 below)
+
+- Most TFI files currently mix declaration of symbols and side-effects extensively.
+  It will most likely be a slow process to fix this. As it is done, symbol
+  definitions should be moved from their current location to `/lib/TFI/...`.
+  (See 2.3 below)
+
+
 
 1. Overview
 -----------
