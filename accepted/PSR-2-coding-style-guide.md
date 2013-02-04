@@ -42,6 +42,9 @@ TFI Notes
 - As time permits (or changes demand) the remaining rules should also
   be applied.
 
+- In addition to these rules, all instances of the keywoards `and` and `or` SHOULD be replaced 
+  with the operators `&&` and `||`. This is a second pass requirement.
+
 1. Overview
 -----------
 
